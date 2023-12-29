@@ -39,4 +39,6 @@ export type SocialMedia =
   | "Skype"
   | "Steam"
   | "Telegram"
-  | "Mastodon";
+  | "Mastodon"
+  | "Unsplash"
+  | "Google Scholar";
