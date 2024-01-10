@@ -49,7 +49,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Google Scholar",
-    href: "https://google.com",
+    href: "https://scholar.google.com/citations?hl=en&user=1sGnrjoAAAAJ",
     linkTitle: `${SITE.title} on Google Scholar`,
     active: true,
   },

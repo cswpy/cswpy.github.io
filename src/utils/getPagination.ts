@@ -18,8 +18,8 @@ const getPagination = <T>({
   const currentPage = isIndex
     ? 1
     : page && !isNaN(Number(page)) && totalPagesArray.includes(Number(page))
-      ? Number(page)
-      : 0;
+    ? Number(page)
+    : 0;
 
   const lastPost = isIndex ? SITE.postPerPage : currentPage * SITE.postPerPage;
   const startPost = isIndex ? 0 : lastPost - SITE.postPerPage;

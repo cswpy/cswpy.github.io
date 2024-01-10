@@ -122,7 +122,7 @@ Here is an example of changing the light color scheme.
     --color-fill: 246, 238, 225;
     --color-text-base: 1, 44, 86;
     --color-accent: 225, 74, 57;
-    --color-card: 220, 152, 145;
+    --color-card: 234, 206, 219;
     --color-card-muted: 233, 119, 106;
     --color-border: 220, 152, 145;
   }
