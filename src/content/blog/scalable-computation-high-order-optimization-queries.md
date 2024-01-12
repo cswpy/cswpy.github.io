@@ -29,7 +29,7 @@ The paper proposes a solution for finding a set of tuples that collectively sati
    2. Global predicates: constraints on the group of tuples, solved by ILP solver
 4. Objective Clause: ranking of packages, either _minimize_ or _maximize_
 
-### Query→ ILP using Direct
+### Query→ILP using Direct
 
 Each tuple in the base relation is assigned a variable $x_i$, that indicates the number of times it could appear in the package. $x_i=0$ for tuples that does not satisfy the base predicates. It then expresses the global predicates as inequalities. Finally, we minimize/maximize the objective clause under the previous constraints.
 
@@ -40,7 +40,7 @@ Direct is too slow and is not scalable, also, the optimization problem is hard t
 - **SketchRefine**
   - Offline partitioning
     - Partition the base relation into groups, and find the representative tuple for each group
-    - $\uptau$ restricts the group size; larger $\uptau$ → larger group size → less groups
+    - $\tau$ restricts the group size; larger $\tau$ → larger group size → less groups
     - $d_{ij}$ defines the greatest distance between any two tuples in a group $G_i$ on attribute $j$; smaller $d_{ij}$ → better approximation
     - Partitioning dataset on the union of all attributes
   - Sketch
