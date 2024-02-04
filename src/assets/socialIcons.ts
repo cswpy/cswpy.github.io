@@ -1,6 +1,4 @@
-import type { SocialIcons } from "../types";
-
-const socialIcons: SocialIcons = {
+const socialIcons = {
   Github: `<svg
     xmlns="http://www.w3.org/2000/svg"
     class="icon-tabler"
@@ -14,7 +12,7 @@ const socialIcons: SocialIcons = {
   </svg>`,
   Facebook: `<svg
     xmlns="http://www.w3.org/2000/svg"
-      
+    class="icon-tabler"
     stroke-linecap="round"
     stroke-linejoin="round"
   >
