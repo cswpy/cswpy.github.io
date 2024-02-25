@@ -1,6 +1,6 @@
 ---
 author: Pengyu Wang
-pubDatetime: 2024-02-04T14:03:22.000Z
+pubDatetime: 2024-02-25T07:21:00.000Z
 modDatetime:
 title: What Every Programmer Should Know About Memory
 featured: false
@@ -73,9 +73,9 @@ Still not scalable → memory controller needs to have (16+16) \* 8 = 256 for 8 
 > [!question] Are we transmitting the RAS and CAS over the same set of wires? Does this cut the wires by half?
 > A: Yes, we lower the $\overline{RAS}$ signal and transmit RAS first, and after $t_{RCD}$ ($\overline{RAS}$-to-$\overline{CAS}$ delay) time, we lower the $\overline{CAS}$ line and transmit CAS. Both RAS and CAS are active-low because it’s more resistant to false-triggering due to noise. Finally, we wait for $\overline{CAS}$ Latency (CL) before data becomes available.
 
-![[images/Pasted image 20240203004238.png]]
+![](/images/SDRAM%20Read%20Access%20Timing.png)
 
-![[images/Pasted image 20240204105246.png]]
+![](/images/SDRAM%20Read%20Precharge.png)
 
 #### Terms
 
