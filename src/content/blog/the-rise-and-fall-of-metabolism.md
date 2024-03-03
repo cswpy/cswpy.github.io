@@ -33,7 +33,7 @@ Of course, metabolism does not limit itself in this one building. The image belo
 
 Another less-known example is the Yamanashi Press and Broadcasting Center designed by Kenzo Tange. It is actually the only one that was able to grow in size like a metabollic creature.
 
-<img src='https://www.sosbrutalism.org/sixcms/media.php/1685/thumbnails/15702130551_0f9ec54c1d_o.jpg.2546269.jpg'>
+<img src='https://www.sosbrutalism.org/sixcms/media.php/1685/s/15702130551_0f9ec54c1d_o.jpg.2546269.jpg'>
 
 Looking back, the idea of compartmentalizing the buildings may be too avant-garde in terms of technical capabilities. However, the idea behind its design is nevertheless provoking: how we could make buildings breathe, grow, and evolve? This a question that designers, architects, and inhabitants will continue to ponder in the forseeable future. I will end with some amazing and fantasized concept arts called Nakagin Capsule Memories Project by [abdz.do](https://abduzeedo.com/nakagin-capsule-memories).
 

@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Pengyu Wang",
   desc: "Pengyu Wang's personal blog",
   title: "Pengyu Wang",
-  ogImage: "",
+  ogImage: "website-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000,
