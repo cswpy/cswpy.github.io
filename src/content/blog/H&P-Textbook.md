@@ -146,7 +146,7 @@ Suppose we have a branch instruction $i$. If the branch is not taken, we execute
    2. We could fetch the _predicted-taken_ instruction $j$ in scenario (b), if wrong, the instruction in the _branch delay slot_ is turned into a no-op.
    3. We could fetch the _predicted-untaken_ instruction $i+1$ in scenario (c), if wrong, the instruction is turned into a no-op
 
-![](branch-delay.png)
+![](/images/branch-delay.png)
 
 #### Pipeline Implementation
 
