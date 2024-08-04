@@ -1,102 +1,166 @@
 ---
 import AboutLayout from "@layouts/AboutLayout.astro";
 import LinkButton from "@components/LinkButton.astro";
-import 'leaflet/dist/leaflet.css';
+import "leaflet/dist/leaflet.css";
 ---
 
 <AboutLayout frontmatter={{ title: "About" }}>
-  <img src="/assets/profile_headshot.JPG" class="sm:w-2/6 mx-auto" alt="profile picture of Pengyu"></img>
-    <p>I am currently a Master student in Computer Science at Yale University. Previously, I graduated from <a href="https://nyuad.nyu.edu/" class="underline decoration-dashed underline-offset-4 hover:text-skin-accent">
-        NYU Abu Dhabi</a> with a Bachelor's degree in Computer Science. I am into distributed systems, big data systems, and everything that supports them. </p>    
-    
-    <h2>Experiences</h2>
-    
-    <p>Previously, I have interned at <a href="https://www.tiktok.com/about?lang=en" class="underline decoration-dashed underline-offset-4 hover:text-skin-accent">
-        TikTok</a>, 
-        <a href="https://www.bell-labs.com/" class="underline decoration-dashed underline-offset-4 hover:text-skin-accent">Nokia Bell Labs</a>, 
-        and <a href="https://www.combyne.com/about" class="underline decoration-dashed underline-offset-4 hover:text-skin-accent">
-        combyne</a>. I have also engaged in research projects in Computer Science and published two papers as co-authors,
-        which are listed <a href="https://scholar.google.com/citations?hl=en&user=1sGnrjoAAAAJ" class="underline decoration-dashed underline-offset-4 hover:text-skin-accent">here</a>.
-        To learn more about my professional experiences, have a look at my <a href="../assets/resume.pdf" class="underline decoration-dashed underline-offset-4 hover:text-skin-accent">
-        resume</a>. Below is an <b>incomplete quantitative summary</b> of the programming languages that I fiddle with.
-
-        <figure><embed src="https://wakatime.com/share/@1cfff9e1-d718-446b-b015-0f01fb06c490/7dbfe7b5-4ac6-4516-831c-e08ef14ed903.svg"></embed></figure>
+  <img
+    src="/assets/profile_headshot.jpeg"
+    class="sm:w-3/5 mx-auto"
+    alt="profile picture of Pengyu"
+  /></AboutLayout
+>
+<p>
+  I am currently a Master student in Computer Science at Yale University.
+  Previously, I graduated from <a
+    href="https://nyuad.nyu.edu/"
+    class="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+  >
+    NYU Abu Dhabi</a
+  > with a Bachelor's degree in Computer Science. I am into distributed systems,
+  big data systems, and everything that supports them.
 </p>
 
+<h2>Experiences</h2>
 
-    <h2>About me, personally</h2>
-    <p>My hometown is Changsha, China, where I spent the first 18 years of my life there. 
-    Then I moved to Abu Dhabi, United Arab Emirates for college, where I met friends from all over the world and had an amazing 4 years (actually 3 years because of COVID). 
-    Now, I am living in New Haven, United States to pursue graduate studies. I love to travel, especially with friends. Below is a list of countries I have been to:</p>
+<p>
+  In Summer 2024, I was interning at <a
+    href="https://www.duolingo.com/info"
+    class="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+    >Duolingo</a
+  > as an Operations Engineer Intern. Previously, I have interned at <a
+    href="https://www.tiktok.com/about?lang=en"
+    class="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+  >
+    TikTok</a
+  >,
+  <a
+    href="https://www.bell-labs.com/"
+    class="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+    >Nokia Bell Labs</a
+  >, and <a
+    href="https://www.combyne.com/about"
+    class="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+  >
+    combyne</a
+  >. I have also engaged in research projects in Computer Science and published
+  two papers as co-authors, which are listed <a
+    href="https://scholar.google.com/citations?hl=en&user=1sGnrjoAAAAJ"
+    class="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+    >here</a
+  >. To learn more about my professional experiences, have a look at my <a
+    href="../assets/resume.pdf"
+    class="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+  >
+    resume</a
+  >. Below is an <b>incomplete quantitative summary</b> of the programming languages
+  that I fiddle with.
 
-    <div id="map" style="height: 500px; width: mx-auto" class="not-prose"></div>
+  <figure>
+    <embed
+      src="https://wakatime.com/share/@1cfff9e1-d718-446b-b015-0f01fb06c490/7dbfe7b5-4ac6-4516-831c-e08ef14ed903.svg"
+    />
+  </figure>
+</p>
 
-    <p>In Summer 2022, I bought a pre-owned Canon EOS R from Facebook Marketplace (yes I do shop there), which emptied out a large portion of my savings. Since then, I have been taking pictures during my trips. 
-    I post some of them on <a href="https://unsplash.com/@hncswpy" class="underline decoration-dashed underline-offset-4 hover:text-skin-accent">Unsplash</a>, feel free to check them out.</p>
+<h2>About me, personally</h2>
+<p>
+  My hometown is Changsha, China, where I spent the first 18 years of my life
+  there. Then I moved to Abu Dhabi, United Arab Emirates for college, where I
+  met friends from all over the world and had an amazing 4 years (actually 3
+  years because of COVID). Now, I am living in New Haven, United States to
+  pursue graduate studies. I love to travel, especially with friends. Below is a
+  list of countries I have been to:
+</p>
 
-    <p>Apart from photography, I am also a gamer. You would be surprised to find out how many hour I spent on games like R6S, Apex Legends, Legends of Zelda, and Super Smash Bros (and how I still suck at them).
-      More often, you could catch me vibing with music on Spotify.
-    </p>
-    <img
-	src="https://spotify-badge-opal.vercel.app/api/now-playing.svg"
-	width="540"
-	height="52"
+<div id="map" style="height: 500px; width: mx-auto" class="not-prose"></div>
+
+<p>
+  In Summer 2022, I bought a pre-owned Canon EOS R from Facebook Marketplace
+  (yes I do shop there), which emptied out a large portion of my savings. Since
+  then, I have been taking pictures during my trips. I post some of them on <a
+    href="https://unsplash.com/@hncswpy"
+    class="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+    >Unsplash</a
+  >, feel free to check them out.
+</p>
+
+<p>
+  Apart from photography, I am also a gamer. You would be surprised to find out
+  how many hour I spent on games like R6S, Apex Legends, Legends of Zelda, and
+  Super Smash Bros (and how I still suck at them). More often, you could catch
+  me vibing with music on Spotify.
+</p>
+<img
+  src="https://spotify-badge-opal.vercel.app/api/now-playing.svg"
+  width="540"
+  height="52"
 />
 
-</AboutLayout>
-  <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script type="module">
+<script
+  is:inline
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+<script type="module">
   var pin_sp = L.icon({
-    iconUrl: '../assets/marker-green.png',
+    iconUrl: "../assets/marker-green.png",
     iconSize: [28, 28],
     iconAnchor: [14, 28],
     popupAnchor: [1, -28],
   });
 
   var pin = L.icon({
-    iconUrl: '../assets/marker-red.png',
+    iconUrl: "../assets/marker-red.png",
     iconSize: [28, 28],
     iconAnchor: [14, 28],
     popupAnchor: [1, -28],
   });
 
-  var corner1 = L.latLng(90.0,190);
-  var corner2 = L.latLng(-90.0,-170);
+  var corner1 = L.latLng(90.0, 190);
+  var corner2 = L.latLng(-90.0, -170);
 
-  var map = L.map('map', {
+  var map = L.map("map", {
     center: [30, 20],
     zoom: 1.8,
     maxZoom: 16,
     minZoom: 1.8,
     maxBounds: L.latLngBounds(corner1, corner2),
   });
-  L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg', {
-	  attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>', 
-  }).addTo(map);
-  
-  
-  const changsha = L.marker([28.15768,112.98974], {icon: pin_sp}).addTo(map);
-  const philippines = L.marker([10.29267,123.90587], {icon: pin}).addTo(map);
-  const france = L.marker([48.85293,2.35005], {icon: pin}).addTo(map);
-  const italy = L.marker([41.8903,12.4924], {icon: pin}).addTo(map);
-  const swiss = L.marker([46.5475788, 7.9789741], {icon: pin}).addTo(map);
-  const japan = L.marker([36.1398,137.2546], {icon: pin}).addTo(map);
-  const singapore = L.marker([1.2804512, 103.8447853], {icon: pin}).addTo(map);
-  const abudhabi = L.marker([24.5234004, 54.4337250], {icon: pin_sp}).addTo(map);
-  const jordan = L.marker([31.95447,35.93672], {icon: pin}).addTo(map);
-  const morocco = L.marker([35.16879,-5.26836], {icon: pin}).addTo(map);
-  const turkey = L.marker([38.64247,34.82962], {icon: pin}).addTo(map);
-  const bosnia = L.marker([43.34396,17.81058], {icon: pin}).addTo(map);
-  const montenegro = L.marker([42.2872,18.8428], {icon: pin}).addTo(map);
-  const serbia = L.marker([43.28545,20.81068], {icon: pin}).addTo(map);
-  const egypt = L.marker([29.97595,31.13075], {icon: pin}).addTo(map);
-  const ghana = L.marker([5.57021,-0.17387], {icon: pin}).addTo(map);
-  const norway = L.marker([69.6358,18.9960], {icon: pin}).addTo(map);
-  const netherlands = L.marker([52.11556,4.28317], {icon: pin}).addTo(map);
-  const newhaven = L.marker([41.31310,-72.92484], {icon: pin_sp}).addTo(map);
+  L.tileLayer(
+    "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg",
+    {
+      attribution:
+        '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+    }
+  ).addTo(map);
+
+  const changsha = L.marker([28.15768, 112.98974], { icon: pin_sp }).addTo(map);
+  const philippines = L.marker([10.29267, 123.90587], { icon: pin }).addTo(map);
+  const france = L.marker([48.85293, 2.35005], { icon: pin }).addTo(map);
+  const italy = L.marker([41.8903, 12.4924], { icon: pin }).addTo(map);
+  const swiss = L.marker([46.5475788, 7.9789741], { icon: pin }).addTo(map);
+  const japan = L.marker([36.1398, 137.2546], { icon: pin }).addTo(map);
+  const singapore = L.marker([1.2804512, 103.8447853], { icon: pin }).addTo(
+    map
+  );
+  const abudhabi = L.marker([24.5234004, 54.433725], { icon: pin_sp }).addTo(
+    map
+  );
+  const jordan = L.marker([31.95447, 35.93672], { icon: pin }).addTo(map);
+  const morocco = L.marker([35.16879, -5.26836], { icon: pin }).addTo(map);
+  const turkey = L.marker([38.64247, 34.82962], { icon: pin }).addTo(map);
+  const bosnia = L.marker([43.34396, 17.81058], { icon: pin }).addTo(map);
+  const montenegro = L.marker([42.2872, 18.8428], { icon: pin }).addTo(map);
+  const serbia = L.marker([43.28545, 20.81068], { icon: pin }).addTo(map);
+  const egypt = L.marker([29.97595, 31.13075], { icon: pin }).addTo(map);
+  const ghana = L.marker([5.57021, -0.17387], { icon: pin }).addTo(map);
+  const norway = L.marker([69.6358, 18.996], { icon: pin }).addTo(map);
+  const netherlands = L.marker([52.11556, 4.28317], { icon: pin }).addTo(map);
+  const newhaven = L.marker([41.3131, -72.92484], { icon: pin_sp }).addTo(map);
 
   changsha.bindPopup("My hometown!");
   abudhabi.bindPopup("The good old college days");
-  newhaven.bindPopup("Where I am now!")
-  </script>
-  
+  newhaven.bindPopup("Where I am now!");
+</script>
