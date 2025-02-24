@@ -1,6 +1,7 @@
 ---
 import AboutLayout from "@layouts/AboutLayout.astro";
 import LinkButton from "@components/LinkButton.astro";
+import TravelMap from "@components/TravelMap.astro";
 import "leaflet/dist/leaflet.css";
 ---
 
@@ -73,7 +74,16 @@ import "leaflet/dist/leaflet.css";
     a list of countries I have been to:
   </p>
 
-  <div id="map" style="height: 500px; width: mx-auto" class="not-prose"></div>
+  <!-- First load the Leaflet library -->
+  <script 
+    is:inline
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+  </script>
+  
+  <!-- Then include the map component -->
+  <TravelMap />
 
   <p>
     In Summer 2022, I bought a pre-owned Canon EOS R from Facebook Marketplace
@@ -97,81 +107,4 @@ import "leaflet/dist/leaflet.css";
     width="540"
     height="52"
   />
-
-  <script
-    is:inline
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-  <script type="module">
-    document.addEventListener("DOMContentLoaded", () => {
-      var pin_sp = L.icon({
-        iconUrl: "../assets/marker-green.png",
-        iconSize: [28, 28],
-        iconAnchor: [14, 28],
-        popupAnchor: [1, -28],
-      });
-
-      var pin = L.icon({
-        iconUrl: "../assets/marker-red.png",
-        iconSize: [28, 28],
-        iconAnchor: [14, 28],
-        popupAnchor: [1, -28],
-      });
-
-      var corner1 = L.latLng(90.0, 190);
-      var corner2 = L.latLng(-90.0, -170);
-
-      var map = L.map("map", {
-        center: [30, 20],
-        zoom: 1.8,
-        maxZoom: 16,
-        minZoom: 1.8,
-        maxBounds: L.latLngBounds(corner1, corner2),
-      });
-      L.tileLayer(
-        "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg",
-        {
-          attribution:
-            '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
-        }
-      ).addTo(map);
-
-      const changsha = L.marker([28.15768, 112.98974], { icon: pin_sp }).addTo(
-        map
-      );
-      const philippines = L.marker([10.29267, 123.90587], { icon: pin }).addTo(
-        map
-      );
-      const france = L.marker([48.85293, 2.35005], { icon: pin }).addTo(map);
-      const italy = L.marker([41.8903, 12.4924], { icon: pin }).addTo(map);
-      const swiss = L.marker([46.5475788, 7.9789741], { icon: pin }).addTo(map);
-      const japan = L.marker([36.1398, 137.2546], { icon: pin }).addTo(map);
-      const singapore = L.marker([1.2804512, 103.8447853], { icon: pin }).addTo(
-        map
-      );
-      const abudhabi = L.marker([24.5234004, 54.433725], {
-        icon: pin_sp,
-      }).addTo(map);
-      const jordan = L.marker([31.95447, 35.93672], { icon: pin }).addTo(map);
-      const morocco = L.marker([35.16879, -5.26836], { icon: pin }).addTo(map);
-      const turkey = L.marker([38.64247, 34.82962], { icon: pin }).addTo(map);
-      const bosnia = L.marker([43.34396, 17.81058], { icon: pin }).addTo(map);
-      const montenegro = L.marker([42.2872, 18.8428], { icon: pin }).addTo(map);
-      const serbia = L.marker([43.28545, 20.81068], { icon: pin }).addTo(map);
-      const egypt = L.marker([29.97595, 31.13075], { icon: pin }).addTo(map);
-      const ghana = L.marker([5.57021, -0.17387], { icon: pin }).addTo(map);
-      const norway = L.marker([69.6358, 18.996], { icon: pin }).addTo(map);
-      const netherlands = L.marker([52.11556, 4.28317], { icon: pin }).addTo(
-        map
-      );
-      const newhaven = L.marker([41.3131, -72.92484], { icon: pin_sp }).addTo(
-        map
-      );
-
-      changsha.bindPopup("My hometown!");
-      abudhabi.bindPopup("The good old college days");
-      newhaven.bindPopup("Where I am now!");
-    });
-  </script>
 </AboutLayout>
