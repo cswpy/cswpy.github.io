@@ -19,8 +19,9 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     react(),
-    sitemap(),
-    mdx(),
+    sitemap({
+      filter: page => SITE.showArchives || !page.endsWith("/archives"),
+    }),
   ],
   markdown: {
     remarkPlugins: [
@@ -36,7 +37,8 @@ export default defineConfig({
     ],
     rehypePlugins: [rehypeKatex],
     shikiConfig: {
-      theme: "one-dark-pro",
+      // For more themes, visit https://shiki.style/themes
+      theme: "dracula",
       wrap: true,
     },
   },
@@ -47,4 +49,7 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
+  experimental: {
+    contentLayer: true,
+  },
 });
